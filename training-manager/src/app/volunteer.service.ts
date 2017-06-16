@@ -25,8 +25,8 @@ export class VolunteerService {
   }
 
   updateVolunteer(updatedVolunteer){
-    var volunteerEntryInFirebase = this.getByVolunteerId(updatedVolunteer.$key);
-    volunteerEntryInFirebase.update({
+    var volunteerInFirebase = this.getByVolunteerId(updatedVolunteer.$key);
+    volunteerInFirebase.update({
       name: updatedVolunteer.name,
       age: updatedVolunteer.age,
       sex: updatedVolunteer.sex,
@@ -35,6 +35,7 @@ export class VolunteerService {
   }
 
   deleteVolunteer(deletedVolunteer){
-
+    var volunteerInFirebase = this.getByVolunteerId(deletedVolunteer.$key);
+    volunteerInFirebase.remove();
   }
 }
