@@ -24,11 +24,17 @@ export class VolunteerService {
     return this.database.object('volunteers/' + volunteerId);
   }
 
-  update(){
-
+  updateVolunteer(updatedVolunteer){
+    var volunteerEntryInFirebase = this.getByVolunteerId(updatedVolunteer.$key);
+    volunteerEntryInFirebase.update({
+      name: updatedVolunteer.name,
+      age: updatedVolunteer.age,
+      sex: updatedVolunteer.sex,
+      background: updatedVolunteer.background,
+      bio: updatedVolunteer.bio});
   }
 
-  delete(){
-    
+  deleteVolunteer(deletedVolunteer){
+
   }
 }

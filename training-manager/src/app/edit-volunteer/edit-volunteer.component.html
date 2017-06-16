@@ -1,3 +1,20 @@
-<p>
-  edit-volunteer works!
-</p>
+<h4>Update Volunteer</h4>
+
+<label>Update Volunteer Name:</label>
+<input [(ngModel)]="selectedVolunteer.name">
+<br>
+<label>Update Volunteer's Age:</label>
+<input [(ngModel)]="selectedVolunteer.age">
+<br>
+<label>Update Volunteer's Gender:</label>
+<input [(ngModel)]="selectedVolunteer.sex">
+<br>
+<label>Update Volunteer Background:</label>
+<input [(ngModel)]="selectedVolunteer.background">
+<br>
+<label>Update Volunteer Background:</label>
+<input [(ngModel)]="selectedVolunteer.bio">
+<br>
+<button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
+<br>
+<button class="btn btn-danger" (click)="begVolunteerDelete(selectedVolunteer)">Delete</button>
