@@ -33,11 +33,5 @@
     <br>
     <textarea #newBio></textarea>
   </div>
-
-  <div>
-    <label>Trained</label>
-    <input type="radio" #newTrained [value]="true">Completed Training<br>
-    <input type="radio" #newTrained [value]="false">Untrained<br>
-  </div>
-  <button (click)="submitForm(newName.value, newSex.value, newAge.value, newBackground.value, newBio.value, newTrained.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value=''; newTrained.value='';">Add</button>
+  <button (click)="submitForm(newName.value, newSex.value, newAge.value, newBackground.value, newBio.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value='';">Add</button>
 </div>

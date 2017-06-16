@@ -20,8 +20,7 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, age: number, sex: string, background: string, bio: string, trained: boolean){
     var newVolunteer: Volunteer = new Volunteer(name, age, sex, background, bio, trained);
-    console.log(newVolunteer)
-    // this.volunteerService.addVolunteer(newVolunteer);
+    this.volunteerService.addVolunteer(newVolunteer);
   }
 
 }
