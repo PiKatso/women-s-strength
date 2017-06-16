@@ -23,4 +23,12 @@ export class VolunteerService {
   getByVolunteerId(volunteerId: string){
     return this.database.object('volunteers/' + volunteerId);
   }
+
+  update(){
+
+  }
+
+  delete(){
+    
+  }
 }

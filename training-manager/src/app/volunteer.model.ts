@@ -7,6 +7,3 @@ export class Volunteer {
     public bio: string,
     trained: boolean) { }
 }
-
-
-// public id: number
