@@ -29,3 +29,40 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Planning
+
+1. Configuration/dependencies
+  * Angular
+  * Gulp
+  * Npm
+  * Bower
+
+
+2. User stories
+
+  * As a user, I'd like to visit a page to see a list of all volunteers
+  * As a user, I'd like to click a volunteers entry in the list to visit their profile, which should include more details about them.
+  * As a user, I'd like the option to visit an "About" page that explains what the program is, and what they do.
+  * As a user, I'd like all data persisted in a database, so it's always there when I need it.
+  * As a user, I'd like to search the list of volunteers by their training
+
+  * As an administrator, I want to add new volunteers to the database.
+  * As an administrator, I want to be able to edit volunteer profiles, in case I make a mistake, or need to update their details.
+  * As an administrator, need the option to delete a volunteer, in case they leave the program or are no longer available.
+
+
+3. Integration
+  * Initial routes and index page with all dependencies
+  * Component for viewing:
+  * Component for editing:
+  * Component for adding:
+  * Pipe to filter volunteers by :
+
+4. UX/UI
+  * Develop custom style
+
+5. Polish
+  * Refactor code
+  * Delete unused files/code
+  * Make README awesome
