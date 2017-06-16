@@ -13,6 +13,7 @@ import { ListVolunteerComponent } from './list-volunteer/list-volunteer.componen
 import { AdminComponent } from './admin/admin.component';
 import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.component';
 import { AboutComponent } from './about/about.component';
+import { EditVolunteerComponent } from './edit-volunteer/edit-volunteer.component';
 
 
 export const firebaseConfig = {
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     ListVolunteerComponent,
     AdminComponent,
     VolunteerDetailComponent,
-    AboutComponent
+    AboutComponent,
+    EditVolunteerComponent
   ],
   imports: [
     BrowserModule,

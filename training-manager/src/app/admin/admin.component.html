@@ -1,37 +1,44 @@
-<!-- <div>
-  <list-volunteer></list-volunteer>
-</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div>
+        <app-list-volunteer></app-list-volunteer>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <h3>Create Volunteer</h3>
+      <div>
+        <div>
+          <label>Volunteer Name:</label>
+          <br>
+          <input #newName>
+        </div>
 
-<h3>Create Volunteer</h3>
-<div>
-  <div>
-    <label>Volunteer Name:</label>
-    <br>
-    <input #newName>
-  </div>
+        <div>
+          <label>Volunteer Age:</label>
+          <br>
+          <input #newAge>
+        </div>
 
-  <div>
-    <label>Volunteer Age:</label>
-    <br>
-    <input #newAge>
-  </div>
+        <div>
+          <label>Volunteer Gender:</label>
+          <br>
+          <textarea #newSex></textarea>
+        </div>
 
-  <div>
-    <label>Volunteer Gender:</label>
-    <br>
-    <textarea #newSex></textarea>
-  </div>
+        <div>
+          <label>Background:</label>
+          <br>
+          <textarea #newBackground></textarea>
+        </div>
 
-  <div>
-    <label>Background:</label>
-    <br>
-    <textarea #newBackground></textarea>
+        <div>
+          <label>Volunteer Bio:</label>
+          <br>
+          <textarea #newBio></textarea>
+        </div>
+        <button (click)="submitForm(newName.value, newAge.value, newSex.value, newBackground.value, newBio.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value='';">Add</button>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <label>Volunteer Bio:</label>
-    <br>
-    <textarea #newBio></textarea>
-  </div>
-  <button (click)="submitForm(newName.value, newSex.value, newAge.value, newBackground.value, newBio.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value='';">Add</button>
 </div>

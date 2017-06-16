@@ -6,5 +6,13 @@
 <div *ngFor="let volunteer of volunteers | async" (click)="goToVolunteer(volunteer)">
   <div class="panel-body">
     <h3><em>{{volunteer.name}}</em>,  {{volunteer.age}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{volunteer.sex}}
+      <br>
+      <app-edit-volunteer></app-edit-volunteer>
+    </div>
   </div>
 </div>
+
+
+<!-- [selectedVolunteer]="volunteer" -->
