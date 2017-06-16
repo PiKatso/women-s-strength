@@ -15,6 +15,10 @@
 <label>Update Volunteer Background:</label>
 <input [(ngModel)]="selectedVolunteer.bio">
 <br>
+<label>Volunteer Training</label>
+<input type="radio" ng-model="selectedVolunteer.trained" ng-value="true"/> Active
+<input type="radio" ng-model="iselectedVolunteer.trained" ng-value="false"/>  Inactive
+<br>
 <button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
 <br>
 <button class="btn btn-danger" (click)="begVolunteerDelete(selectedVolunteer)">Delete</button>

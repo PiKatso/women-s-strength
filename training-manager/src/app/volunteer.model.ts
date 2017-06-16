@@ -5,5 +5,5 @@ export class Volunteer {
     public sex: string,
     public background: string,
     public bio: string,
-    trained: boolean) { }
+    public trained: boolean) { }
 }
