@@ -54,7 +54,7 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 3. Integration
   * Initial routes and index page with all dependencies
-  * Component for viewing:
+  * Component for viewing: ListVolunteerComponent
   * Component for editing:
   * Component for adding:
   * Pipe to filter volunteers by :
@@ -66,3 +66,7 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
   * Refactor code
   * Delete unused files/code
   * Make README awesome
+
+## Cloning Project/Set-Up
+
+always include instructions for users to acquire their own Firebase credentials and place them in the appropriate file, in the appropriate place, with the appropriate variable names. Your project READMEs should always setup instructions detailing all necessary steps to get a project up and running. Including adding Firebase credentials.
