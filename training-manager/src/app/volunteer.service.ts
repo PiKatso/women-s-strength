@@ -15,4 +15,8 @@ export class VolunteerService {
   getVolunteers() {
     return this.volunteers;
   }
+
+  addVolunteer(newVolunteer: Volunteer) {
+    this.volunteers.push(newVolunteer);
+  }
 }

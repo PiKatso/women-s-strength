@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { VolunteerService } from '../volunteer.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -19,7 +20,8 @@ export class AdminComponent implements OnInit {
 
   submitForm(name: string, age: number, sex: string, background: string, bio: string, trained: boolean){
     var newVolunteer: Volunteer = new Volunteer(name, age, sex, background, bio, trained);
-    console.log(newVolunteer);
+    console.log(newVolunteer)
+    // this.volunteerService.addVolunteer(newVolunteer);
   }
 
 }
