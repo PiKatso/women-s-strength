@@ -15,6 +15,10 @@ export class EditVolunteerComponent implements OnInit {
   ngOnInit() {
   }
 
+  begUpdateVolunteer(volunteerToUpdate){
+    this.volunteerService.updateVolunteer(volunteerToUpdate);
+  }
+
   begDeleteVolunteer(volunteerDeleting){
     // if(confirm("you want to delete this volunteer?")) {
     //   this.volunteerService.deleteVolunteer(volunteerDeleting);
