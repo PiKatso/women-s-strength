@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Volunteer } from '../volunteer.model';
 import { Router } from '@angular/router';
 import { VolunteerService } from '../volunteer.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-list-volunteer',
@@ -10,7 +11,7 @@ import { VolunteerService } from '../volunteer.service';
   providers: [ VolunteerService ]
 })
 export class ListVolunteerComponent implements OnInit {
-  volunteers: Volunteer[];
+  volunteers: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private volunteerService: VolunteerService) { }
 
