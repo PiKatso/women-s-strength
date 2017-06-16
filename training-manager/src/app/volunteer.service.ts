@@ -31,7 +31,8 @@ export class VolunteerService {
       age: updatedVolunteer.age,
       sex: updatedVolunteer.sex,
       background: updatedVolunteer.background,
-      bio: updatedVolunteer.bio});
+      bio: updatedVolunteer.bio,
+      trained: updatedVolunteer.trained});
   }
 
   deleteVolunteer(deletedVolunteer){
