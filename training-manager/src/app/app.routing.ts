@@ -14,7 +14,7 @@ const appRoutes: Routes = [
     path: 'admin',
     component: AdminComponent
   },{
-    path: 'projects/:id',
+    path: 'volunteers/:id',
     component: VolunteerDetailComponent
   },{
     path: 'about',

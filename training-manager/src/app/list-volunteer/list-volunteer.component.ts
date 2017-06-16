@@ -19,4 +19,9 @@ export class ListVolunteerComponent implements OnInit {
      this.volunteers = this.volunteerService.getVolunteers();
   }
 
+  goToVolunteer(clickedVolunteer){
+    this.router.navigate(['volunteers', clickedVolunteer.$key]);
+  }
+
+
 }

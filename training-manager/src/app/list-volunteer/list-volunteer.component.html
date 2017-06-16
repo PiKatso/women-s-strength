@@ -3,6 +3,8 @@
 </p>
 
 <p>list of volunteers will go here</p>
-<div *ngFor="let volunteer of volunteers | async">
+<div *ngFor="let volunteer of volunteers | async" (click)="goToVolunteer(volunteer)" class="panel">
+  <div class="panel-body">
     <h3><em>{{volunteer.name}}</em>,  {{volunteer.age}}</h3>
+  </div>
 </div>

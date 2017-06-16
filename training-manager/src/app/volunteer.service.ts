@@ -19,4 +19,8 @@ export class VolunteerService {
   addVolunteer(newVolunteer: Volunteer) {
     this.volunteers.push(newVolunteer);
   }
+
+  getByVolunteerId(volunteerId: string){
+    return this.database.object('volunteers/' + volunteerId);
+  }
 }
