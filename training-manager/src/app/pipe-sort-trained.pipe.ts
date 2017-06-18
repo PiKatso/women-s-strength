@@ -13,14 +13,14 @@ export class PipeSortTrainedPipe implements PipeTransform {
 
     if (trainingStatus == "completed") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].trained == "completed") {
+        if (input[i].trained == "Completed") {
           output.push(input[i]);
         }
       }
       return output;
     } else if (trainingStatus == "incomplete") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].trained == "incomplete") {
+        if (input[i].trained == "Incomplete") {
           output.push(input[i]);
         }
       }
