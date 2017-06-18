@@ -1,12 +1,23 @@
+<div class="search-volunteers">
+  <div class="form-group">
+    <label>Search Volunteers by Training Status</label>
+    <select class="form-control" (change)="onChange($event.target.value)">
+      <option value="all" selected="selected">All Volunteers</option>
+      <option value="completed">Completed Training</option>
+      <option value="incomplete">Incomplete Training</option>
+    </select>
+  </div>
+</div>
 
-<div *ngFor="let volunteer of volunteers | async">
+<div *ngFor="let volunteer of volunteers | async | pipeSortTrained:filterByTraining">
   <div class="panel-body">
     <div>
       <h3 (click)="goToVolunteer(volunteer)"><em>{{volunteer.name}}</em>,  {{volunteer.age}}</h3>
+      <p>Training Status: <em>{{volunteer.trained}}</em></p>
     </div>
 
     <div *ngIf="currentRoute === '/admin'">
-      <p>{{volunteer.background}}</p>
+      <p>Background: <em>{{volunteer.background}}</em></p>
       <hr>
       <app-edit-volunteer [selectedVolunteer]="volunteer" ></app-edit-volunteer>
     </div>

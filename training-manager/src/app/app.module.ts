@@ -14,6 +14,7 @@ import { AdminComponent } from './admin/admin.component';
 import { VolunteerDetailComponent } from './volunteer-detail/volunteer-detail.component';
 import { AboutComponent } from './about/about.component';
 import { EditVolunteerComponent } from './edit-volunteer/edit-volunteer.component';
+import { PipeSortTrainedPipe } from './pipe-sort-trained.pipe';
 
 
 export const firebaseConfig = {
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     AdminComponent,
     VolunteerDetailComponent,
     AboutComponent,
-    EditVolunteerComponent
+    EditVolunteerComponent,
+    PipeSortTrainedPipe
   ],
   imports: [
     BrowserModule,
