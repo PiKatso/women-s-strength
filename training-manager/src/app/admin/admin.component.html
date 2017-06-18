@@ -8,37 +8,47 @@
     <div class="col-md-4">
       <h3>Create Volunteer</h3>
       <div>
-        <div>
+        <div class="form-group">
           <label>Volunteer Name:</label>
           <br>
-          <input #newName>
+          <input class="form-control" #newName>
         </div>
 
-        <div>
+        <div class="form-group">
           <label>Volunteer Age:</label>
           <br>
-          <input #newAge>
+          <input class="form-control" #newAge>
         </div>
 
-        <div>
+        <div class="form-group">
           <label>Volunteer Gender:</label>
           <br>
-          <textarea #newSex></textarea>
+          <textarea class="form-control" #newSex></textarea>
         </div>
 
-        <div>
+        <div class="form-group">
           <label>Background:</label>
           <br>
-          <textarea #newBackground></textarea>
+          <textarea class="form-control" #newBackground></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Volunteer Bio:</label>
+          <br>
+          <textarea class="form-control" #newBio></textarea>
         </div>
 
         <div>
-          <label>Volunteer Bio:</label>
+          <label>Volunteer Training:</label>
           <br>
-          <textarea #newBio></textarea>
+          <select class="form-control" #newTrained value name="trained" ngModel>
+            <option selected disabled>Select Training</option>
+            <option value="completed">Completed</option>
+            <option value="incomplete">Incomplete</option>
+          </select>
         </div>
-        
-        <button (click)="submitForm(newName.value, newAge.value, newSex.value, newBackground.value, newBio.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value='';">Add</button>
+
+        <button (click)="submitForm(newName.value, newAge.value, newSex.value, newBackground.value, newBio.value, newTrained.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value=''; newTrained.value='';">Add</button>
       </div>
     </div>
   </div>

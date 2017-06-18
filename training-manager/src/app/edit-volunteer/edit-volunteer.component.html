@@ -15,9 +15,9 @@
 <label>Update Volunteer Background:</label>
 <input [(ngModel)]="selectedVolunteer.bio">
 <br>
-<label>Volunteer Training</label>
-<input ng-model="selectedVolunteer.trained" ng-value="true" type="radio"/>Trained
-<input ng-model="iselectedVolunteer.trained" ng-value="false" type="radio"/>Untrained
+<label>Volunteer Training: </label>
+<input ng-model="selectedVolunteer.trained" ng-value="completed" type="radio"/> Completed
+<input ng-model="selectedVolunteer.trained" ng-value="incomplete" type="radio"/> Not yet Completed
 <br>
 <button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
 <br>
