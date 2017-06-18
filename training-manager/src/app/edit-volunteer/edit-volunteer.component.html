@@ -1,24 +1,34 @@
 <h4>Update Volunteer</h4>
+<div class="form-group">
+  <label>Update Volunteer Name:</label>
+  <input class="form-control" [(ngModel)]="selectedVolunteer.name">
 
-<label>Update Volunteer Name:</label>
-<input [(ngModel)]="selectedVolunteer.name">
-<br>
-<label>Update Volunteer's Age:</label>
-<input [(ngModel)]="selectedVolunteer.age">
-<br>
-<label>Update Volunteer's Gender:</label>
-<input [(ngModel)]="selectedVolunteer.sex">
-<br>
-<label>Update Volunteer Background:</label>
-<input [(ngModel)]="selectedVolunteer.background">
-<br>
-<label>Update Volunteer Background:</label>
-<input [(ngModel)]="selectedVolunteer.bio">
-<br>
-<label>Volunteer Training: </label>
-<input ng-model="selectedVolunteer.trained" ng-value="completed" type="radio"/> Completed
-<input ng-model="selectedVolunteer.trained" ng-value="incomplete" type="radio"/> Not yet Completed
-<br>
-<button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
-<br>
-<button class="btn btn-danger" (click)="begVolunteerDelete(selectedVolunteer)">Delete</button>
+  <label>Update Volunteer's Age:</label>
+  <input class="form-control" [(ngModel)]="selectedVolunteer.age">
+
+  <label>Update Volunteer's Gender:</label>
+  <input class="form-control" [(ngModel)]="selectedVolunteer.sex">
+
+  <label>Update Volunteer Background:</label>
+  <input class="form-control" [(ngModel)]="selectedVolunteer.background">
+
+  <label>Update Volunteer Background:</label>
+  <input class="form-control" [(ngModel)]="selectedVolunteer.bio">
+
+  <br>
+  <!-- <label>Volunteer Training: </label>
+  <input ng-model="selectedVolunteer.trained" ng-value="completed" type="radio"/> Completed
+  <input ng-model="selectedVolunteer.trained" ng-value="incomplete" type="radio"/> Not yet Completed
+  <br> -->
+
+  <select class="form-control" name="trained" [(ngModel)]="selectedVolunteer.trained">
+    <option selected disabled>Select Specialty</option>
+    <option value="completed">Completed</option>
+    <option value="incomplete">Not Completed</option>
+  </select>
+
+  <br>
+  <button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
+  <br>
+  <button class="btn btn-danger" (click)="begVolunteerDelete(selectedVolunteer)">Delete</button>
+</div>
