@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#remove-jumbotron {
+text-align: center;
+background: rgba(255,255,255,0.0);
+color: white;
+margin-bottom: 0;
+}
+
+#image {
+  background-image: url(./assets/images/strength.png);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
