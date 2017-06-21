@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
-  background: linear-gradient(to bottom right, #f8f8ff 0%, #f8f8ff 100%);
-  min-height: calc(100% + 142px);
+  /*background: linear-gradient(to bottom right, #f8f8ff 0%, #f8f8ff 100%);*/
+  min-height: calc(100% + 120px);
   margin-bottom: -120px;
 }
 
@@ -12,10 +12,10 @@ body:after {
 }
 
 #remove-jumbotron {
-text-align: center;
-background: rgba(255,255,255,0.0);
-color: white;
-margin-bottom: 0;
+  text-align: center;
+  background: rgba(255,255,255,0.0);
+  color: white;
+  margin-bottom: 0;
 }
 
 #image {
@@ -25,7 +25,7 @@ margin-bottom: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100%;
+  min-height: calc(100% + 120px);
 }
 
 .volunteer-objects {
