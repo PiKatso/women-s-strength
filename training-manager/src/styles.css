@@ -1,6 +1,14 @@
 body, html {
-  height: 100%;
   margin: 0;
+  background: linear-gradient(to bottom right, #f8f8ff 0%, #f8f8ff 100%);
+  min-height: calc(100% + 142px);
+  margin-bottom: -120px;
+}
+
+body:after {
+  display: block;
+  content: "";
+  height: 120px;
 }
 
 #remove-jumbotron {
@@ -18,4 +26,79 @@ margin-bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
+}
+
+.volunteer-objects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteer-object {
+  flex-basis: 20%;
+  min-height: 250px;
+  min-width: 250px;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+footer {
+  /*opacity: 0.5;*/
+  position: fixed;
+  left:0px;
+  bottom:0px;
+  width: 100%;
+  max-height: 70px;
+  display: inline-block;
+  margin: 0;
+  background-color: #222222;
+}
+
+footer .social {
+  width: 30%;
+  /*min-width: 40px;*/
+  float: right;
+}
+
+footer .social a {
+  float: left;
+  line-height: 40px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+footer .social a:hover {
+  background-color: #222;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.facebook {
+  background-color: #3D5B94;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.tweet {
+  background-color: #3DACDD;
+  font-size: 1.2em;
+  width: 20%;
+}
+
+.police {
+  /*background-color: #cd486b;*/
+  font-size: 1.2em;
+  width: 20%;
 }
