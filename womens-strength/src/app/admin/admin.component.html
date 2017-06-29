@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div>
+        <app-list-volunteer></app-list-volunteer>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <h3>Create Volunteer</h3>
+      <div>
+        <div class="form-group">
+          <label>Volunteer Name:</label>
+          <br>
+          <input class="form-control" #newName>
+        </div>
+
+        <div class="form-group">
+          <label>Volunteer Age:</label>
+          <br>
+          <input class="form-control" #newAge>
+        </div>
+
+        <div class="form-group">
+          <label>Volunteer Gender:</label>
+          <br>
+          <textarea class="form-control" #newSex></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Background:</label>
+          <br>
+          <textarea class="form-control" #newBackground></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Volunteer Bio:</label>
+          <br>
+          <textarea class="form-control" #newBio></textarea>
+        </div>
+
+        <div>
+          <label>Volunteer Training:</label>
+          <br>
+          <select class="form-control" #newTrained value name="trained" ngModel>
+            <option selected disabled>Select Training</option>
+            <option value="Completed">Completed</option>
+            <option value="Incomplete">Incomplete</option>
+          </select>
+        </div>
+        <br>
+        <button class="btn btn-default" (click)="submitForm(newName.value, newAge.value, newSex.value, newBackground.value, newBio.value, newTrained.value); newName.value=''; newAge.value=''; newSex.value=''; newBackground.value=''; newBio.value=''; newTrained.value='';">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

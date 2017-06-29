@@ -1,0 +1,33 @@
+<h4 (click)="showEdit = !showEdit">Update Volunteer</h4>
+
+<div *ngIf="showEdit">
+  <div class="form-group">
+    <label>Update Volunteer Name:</label>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.name">
+
+    <label>Update Volunteer's Age:</label>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.age">
+
+    <label>Update Volunteer's Gender:</label>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.sex">
+
+    <label>Update Volunteer Background:</label>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.background">
+
+    <label>Update Volunteer Background:</label>
+    <input class="form-control" [(ngModel)]="selectedVolunteer.bio">
+
+    <br>
+
+    <select class="form-control" name="trained" [(ngModel)]="selectedVolunteer.trained">
+      <option selected disabled>Select Specialty</option>
+      <option value="Completed">Completed</option>
+      <option value="Incomplete">Not Completed</option>
+    </select>
+
+    <br>
+    <button class="btn btn-default" (click)="begUpdateVolunteer(selectedVolunteer)">Update</button>
+    <br>
+    <button class="btn btn-danger" (click)="begVolunteerDelete(selectedVolunteer)">Delete</button>
+  </div>
+</div>
